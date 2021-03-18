@@ -26,8 +26,8 @@ public class MetodosNumericos {
                     formula = new Formulas();
                     System.out.print("Ingrese el valor de x: ");
                     x = teclado.nextDouble();
-                    System.out.println("Euler^"+x+": " + e.euler(x));
-                    System.out.println("Euler^-"+x+": " + (1 / e.euler(x)));
+                    System.out.println("Euler^"+x+": " + formula.euler(x));
+                    System.out.println("Euler^-"+x+": " + (1 / formula.euler(x)));
                     System.out.println("");
                     break;
                 case 2:
@@ -42,8 +42,8 @@ public class MetodosNumericos {
                             + "\nValor de b: " + b
                             + "\nValor de c: " + c);
                     formula = new Formulas(a, b, c);
-                    e.factorizacion1();
-                    e.factorizacion2();
+                    formula.factorizacion1();
+                    formula.factorizacion2();
                     break;
                 case 3:
                     System.out.println("Saliendo del Programa");
