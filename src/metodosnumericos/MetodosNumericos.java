@@ -7,7 +7,7 @@ public class MetodosNumericos {
     public static void main(String[] args) {
         int op;
         double x, a, b, c;
-        Formulas e;
+        Formulas formula;
         Scanner teclado = new Scanner(System.in);
         System.out.println("-----------Integrantes del Equipo-----------"
                     + "\n**Roger David Aban Ku ----------- 19070025"
@@ -23,7 +23,7 @@ public class MetodosNumericos {
             op = teclado.nextInt();
             switch (op) {
                 case 1:
-                    e = new Formulas();
+                    formula = new Formulas();
                     System.out.print("Ingrese el valor de x: ");
                     x = teclado.nextDouble();
                     System.out.println("Euler^"+x+": " + e.euler(x));
@@ -41,7 +41,7 @@ public class MetodosNumericos {
                     System.out.println("Valor de a: " + a
                             + "\nValor de b: " + b
                             + "\nValor de c: " + c);
-                    e = new Formulas(a, b, c);
+                    formula = new Formulas(a, b, c);
                     e.factorizacion1();
                     e.factorizacion2();
                     break;
